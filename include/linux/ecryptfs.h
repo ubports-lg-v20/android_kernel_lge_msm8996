@@ -131,9 +131,6 @@ struct ecryptfs_events {
 };
 
 
-int ecryptfs_register_to_events(const struct ecryptfs_events *ops);
-
-int ecryptfs_unregister_from_events(int user_handle);
 
 const unsigned char *ecryptfs_get_key(const void *ecrytpfs_data);
 
@@ -148,7 +145,5 @@ bool ecryptfs_cipher_match(const void *ecrytpfs_data,
 
 bool ecryptfs_is_page_in_metadata(const void *ecrytpfs_data, pgoff_t offset);
 
-bool ecryptfs_is_data_equal(const void *ecrytpfs_data1,
-		const void *ecrytpfs_data2);
 
 #endif /* _LINUX_ECRYPTFS_H */
