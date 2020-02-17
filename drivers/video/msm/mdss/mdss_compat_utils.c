@@ -224,6 +224,7 @@ static struct mdp_input_layer *__create_layer_list(
 		layer->pipe_ndx = layer32->pipe_ndx;
 		layer->horz_deci = layer32->horz_deci;
 		layer->vert_deci = layer32->vert_deci;
+     		layer->alpha = layer32->alpha;
 		layer->z_order = layer32->z_order;
 		layer->transp_mask = layer32->transp_mask;
 		layer->bg_color = layer32->bg_color;
